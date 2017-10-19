@@ -1,1 +1,2 @@
 # Windows Part
+You have to compile this. Note that you need to add the protobuf folder to "Include Directories" and "Library Directories" in your Project properties in "VC++ Directories" (the entries in the properties are absolut pathes to my workin pc folder at this time). Otherwise the protobuf includes wont work. The kinect_message is compiled by the protoc compiler. you can customize your messages with the protofile. See protobuf tutorial.
