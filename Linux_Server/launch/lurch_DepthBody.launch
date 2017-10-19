@@ -1,0 +1,34 @@
+<launch>
+  <node name="kinect_proto_server" pkg="kinect_proto_server" type="kinect_proto_server" output="screen">
+  </node>
+
+<node pkg="nodelet" type="nodelet" args="manager"
+name="record_player_manager" output="screen"/>
+
+
+<node pkg="nodelet" type="nodelet" name="depth_proc0" output="screen"
+        args="load depth_image_proc/point_cloud_xyz record_player_manager --no-bond">
+          <remap from="image_rect" to="image_rect0"/>
+          <remap from="/points" to="/point_cloud0"/>
+</node>
+
+<node pkg="nodelet" type="nodelet" name="depth_proc1" output="screen"
+        args="load depth_image_proc/point_cloud_xyz record_player_manager --no-bond">
+          <remap from="image_rect" to="image_rect1"/>
+          <remap from="/points" to="/point_cloud1"/>
+</node>
+<node pkg="nodelet" type="nodelet" name="depth_proc2" output="screen"
+        args="load depth_image_proc/point_cloud_xyz record_player_manager --no-bond">
+          <remap from="image_rect" to="image_rect2"/>
+          <remap from="/points" to="/point_cloud2"/>
+</node>
+
+<node pkg="nodelet" type="nodelet" name="depth_proc3" output="screen"
+        args="load depth_image_proc/point_cloud_xyz record_player_manager --no-bond">
+          <remap from="image_rect" to="image_rect3"/>
+          <remap from="/points" to="/point_cloud3"/>
+</node>
+<node name="kalib_worker" pkg="rviz_pcl_tools" type="worker" output="screen"> 
+</node>
+</launch>
+
