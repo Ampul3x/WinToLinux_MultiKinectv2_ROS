@@ -4,3 +4,5 @@ A client server program, which streams the depth, body and color data to a Linux
 Visual Studio has to be installed. Here, it is running version 2017. The Kinect SDK has to be installed too. To run the client program, compile on your machine and execute the file.
 # Linux Part
 ROS has to be installed. Here, kinetic is used.
+# Proto.zip
+This is an executable for the windows PC. Visual Studio (2015/17) and the Kinect 2 SDK has to be installed.
