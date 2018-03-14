@@ -1,0 +1,4 @@
+# Windows Part
+You have to compile this. Note that you need to add the protobuf folder to "Include Directories" and "Library Directories" in your Project properties in "VC++ Directories" (the entries in the properties are absolut pathes to my workin pc folder at this time). Otherwise the protobuf includes wont work. The kinect_message is compiled by the protoc compiler. you can customize your messages with the protofile. See protobuf tutorial.
+# Usage
+Before you compile, you have to change the IP Adress of your Linux PC. You can switch off/on the colordata. Note, that this feature draws a lot of bandwith when transfered uncompressed. When the program starts, a Windows console asks you to type in the number of the Kinect on this computer. This has to be made to distinguish between the Kinects on the Linux PC. If there is no connection possible the program exits. Make sure you start the Linux server first.

@@ -1,0 +1,7 @@
+  message log_packet {
+
+  repeated uint32 depth = 1;
+  repeated bytes color = 2;
+  repeated double body = 3;
+
+  }
