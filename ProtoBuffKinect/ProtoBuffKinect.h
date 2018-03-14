@@ -4,7 +4,7 @@
 #define WIN32_LEAN_AND_MEAN
 #define DEFAULT_BUFLEN 512
 #define DEFAULT_PORT "1101"
-
+#define _CRT_SECURE_NO_WARNINGS
 #include "kinect_message.pb.h"
 
 #include <iostream>
